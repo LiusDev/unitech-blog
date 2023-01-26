@@ -50,7 +50,7 @@ const PostDetails = ({ post }) => {
                     </span>
                 </Link> */}
                 <PostDetail post={post} />
-                <Author author={post.author} />
+                {/* <Author author={post.author} /> */}
                 <CommentsForm slug={post.slug} />
                 <Comments slug={post.slug} />
             </div>
