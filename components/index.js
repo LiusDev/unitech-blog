@@ -14,3 +14,5 @@ export {default as PageRate} from './PageRate';
 export {default as Intro} from './Intro';
 export {default as Loader} from './Loader';
 export {default as MetaMessenger} from './MetaMessenger';
+export {default as Button} from './Button';
+export {default as FanpageScript} from './FanpageScript';

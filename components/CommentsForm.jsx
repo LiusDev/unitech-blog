@@ -76,23 +76,14 @@ const CommentsForm = ({ slug }) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
-      <h3 className="text-xl mb-8 font-semibold border-b pb-4">Để lại bình luận của bạn</h3>
-      <div className="grid grid-cols-1 gap-4 mb-4">
-        <textarea
-          value={formData.comment}
-          onChange={onInputChange}
-          className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
-          name="comment"
-          placeholder="Bình luận"
-        />
-      </div>
+    <div className="bg border border-sky-900 rounded-lg p-8 pb-12 mb-8">
+      <h3 className="text-xl mb-8 font-semibold border-b border-sky-900 pb-4">Để lại bình luận của bạn</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
         <input
           type="text"
           value={formData.name}
           onChange={onInputChange}
-          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-sky-900 bg border border-sky-900"
           name="name"
           placeholder="Tên" 
         />
@@ -100,9 +91,18 @@ const CommentsForm = ({ slug }) => {
           type="email"
           value={formData.email}
           onChange={onInputChange}
-          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-sky-900 bg border border-sky-900"
           name="email"
           placeholder="Email"
+        />
+      </div>
+      <div className="grid grid-cols-1 gap-4 mb-4">
+        <textarea
+          value={formData.comment}
+          onChange={onInputChange}
+          className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-sky-900 bg border border-sky-900 transition-all"
+          name="comment"
+          placeholder="Bình luận"
         />
       </div>
       <div className="grid grid-cols-1 gap-4 mb-4">
@@ -114,9 +114,10 @@ const CommentsForm = ({ slug }) => {
             id="storeData"
             name="storeData"
             value="true"
+            className='accent-blue-700'
           />
           <label
-            className="text-gray-500 cursor-pointer select-none"
+            className="cursor-pointer select-none"
             htmlFor="storeData"
           > Lưu tên và email cho lần bình luận tiếp theo.
           </label>
@@ -126,11 +127,11 @@ const CommentsForm = ({ slug }) => {
       <div className="mt-8">
         <button
           type="button"
-            onClick={handlePostSubmission}
-            className="transition duration-500 ease hover:bg-indigo-900 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
-          >
-            Bình luận
-          </button>
+          onClick={handlePostSubmission}
+          className="bg-blue-700 inline-block rounded-full font-bold px-8 py-3 transition-all hover:bg-blue-800"
+        >
+          Bình luận
+        </button>
         {showSuccessMessage && <span className="float-right font-semibold mt-3 text-green-500">Cảm ơn bạn đã để lại bình luận</span>}
       </div>
     </div>

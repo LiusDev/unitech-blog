@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { PostCard, Categories, PostWidget, PageRate } from '../components';
+import { PostCard, Categories, PostWidget, FanpageScript } from '../components';
 import { getPosts } from '../services'
 import { FeaturedPosts } from '../sections';
 
@@ -15,12 +15,13 @@ export default function Home({ posts }) {
 
   return (
     //TODO split posts into multiple pages
-    <div className="container mx-auto px-5 md:px-10 mb-8 min-h-screen">
+    <div className="container mx-auto px-5 md:px-10 mb-8 mt-20 min-h-screen">
       <Head>
         <title>UniTech Blog</title>
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:image" content="/ogImg.jpg" />
         <meta name="google-site-verification" content="0sm1eSTPeRSerzZp2Kf_dIJnZAdjTXkhGF-JmCRap9M" />
+        <FanpageScript />
       </Head>
       <FeaturedPosts />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -30,10 +31,9 @@ export default function Home({ posts }) {
           ))}
         </div>
         <div className="lg:col-span-4 col-span-1">
-            <div className='lg:sticky relative top-8'>
+            <div className='lg:sticky relative top-20'>
               <PostWidget categories={undefined} slug={undefined} />
               <Categories />
-              <PageRate/>
             </div>
         </div>
       </div>

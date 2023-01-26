@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 const intro = () => {
     return (
-        <div className='container mx-auto px-5 md:px-10 mb-8'>
+        <div className='container mx-auto px-5 md:px-10 mb-8 mt-20'>
             <Head>
                 <title>Giới thiệu dự án UniTech Blog</title>
             </Head>
@@ -16,7 +16,6 @@ const intro = () => {
                     <div className='relative lg:sticky top-8'>
                         <PostWidget categories={ undefined } slug={ undefined } />
                         <Categories />
-                        <PageRate />
                     </div>
                 </div>
             </div>

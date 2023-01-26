@@ -55,15 +55,14 @@ const CategoryPost = ({ posts }) => {
         <title>{`Chủ đề: ${categoryName}`}</title>
       </Head>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <div className="col-span-1 lg:col-span-8">
+        <div className="col-span-1 lg:col-span-8 mt-20">
           {posts.map((post, index) => (
             <PostCard key={index} post={post.node} />
           ))}
         </div>
         <div className="col-span-1 lg:col-span-4">
-          <div className="relative lg:sticky top-8">
+          <div className="relative lg:sticky top-20">
             <Categories />
-            <PageRate/>
           </div>
         </div>
       </div>

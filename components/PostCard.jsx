@@ -2,10 +2,12 @@ import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
 import Image from 'next/image'
+import Button from './Button'
 
 const PostCard = ({ post }) => {
   return (
-    <div className='bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8'>
+    <div className='bg border border-sky-900 rounded-lg p-0 lg:p-8 pb-12 mb-8'>
+
         <Link href={`/post/${post.slug}`} key={post.slug}>
           <div className='relative overflow-hidden pb-80 mb-6 cursor-pointer shadow-lg rounded-t-lg lg:rounded-lg'>
             <img
@@ -16,20 +18,6 @@ const PostCard = ({ post }) => {
           </div>
         </Link>
         
-        <Link href={`/post/${post.slug}`}>
-          <h1 className='transition duration-400 text-center mb-4 px-2 cursor-pointer hover:text-pink-600 text-3xl font-semibold'>
-            {post.title}
-          </h1>
-        </Link>
-        <div className='text-center mb-4 px-2'>
-          {post.categories.map(category => (
-            <Link href={`/category/${category.slug}`} key={category.slug}>
-              <span className='cursor-pointer inline-block mr-3 py-1 px-3 mb-3 rounded-full bg-pink-600 text-white text-sm hover:drop-shadow-md hover:-translate-y-1 transition-all'>
-                {category.name}
-              </span>
-            </Link>
-          ))}
-        </div>
         <div className='block lg:flex text-center items-center justify-center mb-4 w-full'>
           <div className='flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8'>
             <Image
@@ -40,28 +28,43 @@ const PostCard = ({ post }) => {
               width={30}
               className='align-middle rounded-full'
             />
-            <p className='inline align-middle text-gray-700 ml-2 text-lg'>
+            <p className='inline align-middle ml-2 subtitle'>
               {post.author.name}
             </p>
           </div>
-          <div className='font-medium text-gray-700'>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-            <span>
+          <div className='font-medium'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 mr-2 inline-block"><path fill="#60a5fa" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"/></svg>
+            <span className='subtitle'>
               {moment(post.createdAt).format('DD/MM/YYYY')}
             </span>
           </div>
         </div>
-        <p className='text-center text-lg text-gray-700 font-normal px-4 lg:p-5 mb-4'>
+        
+        <div className='text-center mb-3 px-2'>
+          {post.categories.map(category => (
+            <Link href={`/category/${category.slug}`} key={category.slug}>
+              <span className='inline-block mx-2 mb-2 category'>
+                {category.name}
+              </span>
+            </Link>
+          ))}
+        </div>
+
+        <Link href={`/post/${post.slug}`}>
+          <h3 className='transition duration-400 text-center px-2 mb-3 cursor-pointer hover:text-blue-400 font-semibold'>
+            {post.title}
+          </h3>
+        </Link>
+
+
+        <p className='text-center px-4 lg:p-5 mb-4'>
           {post.excerpt}
         </p>
+        
         <div className='text-center'>
-          <Link href={`/post/${post.slug}`}>
-            <span className='transition duration-400 transform-all hover:-translate-y-1 hover:drop-shadow-md inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer'>
-              Xem thêm
-            </span>
-          </Link>
+          <Button href={`/post/${post.slug}`}>
+            Đọc tiếp
+          </Button>
         </div>
     </div>
   )
