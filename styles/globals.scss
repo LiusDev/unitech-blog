@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  &:before{
+    content:'';
+    content: "";
+    width: 100%;
+    height: 100vh;
+    // background: linear-gradient(to right bottom, #6d327c, #485DA6, #00a1ba, #01b18e, #32b37b);
+    // background: #D3D3D3;
+    background-image: url("../public/bg.webp");
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0151c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.text-shadow{
+  text-shadow: 0px 2px 0px rgb(0 0 0 / 30%);
+}
+
+.adjacent-post{
+  & .arrow-btn{
+    transition: width 300ms ease;
+    width: 50px;
+  }
+  &:hover{
+    & .arrow-btn{
+      width: 60px;
+    }
+  }
+}
+
+.react-multi-carousel-list {
+  & .arrow-btn{
+    transition: width 300ms ease;
+    width: 50px;
+    &:hover{
+      width: 60px;
+    }
+  }
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.navHover {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  // transition: all 0.3s ease;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  &::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #fff;
+  }
+  &:hover::after,
+  &:focus::after {
+    transform: translate3d(0, 0, 0);
+  }
+  &::before {
+    background-color: #fff;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  &:hover::before,
+  &:focus::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  &:hover span,
+  &:focus span {
+    transform: translate3d(-200%, 0, 0);
+  }
+}
