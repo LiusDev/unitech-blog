@@ -19,7 +19,7 @@ export default function Home({ posts }) {
       <Head>
         <title>UniTech Blog</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image" content="/ogImg.jpg" />
+        <meta property="og:image" content="/ogImg.png" />
         <meta name="google-site-verification" content="0sm1eSTPeRSerzZp2Kf_dIJnZAdjTXkhGF-JmCRap9M" />
         <FanpageScript />
       </Head>
