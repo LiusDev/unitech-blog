@@ -11,7 +11,7 @@ const Categories = () => {
       .then((newCategories) => setCategories(newCategories))
   }, []);
   return (
-    <div className='bg border border-sky-900 rounded-lg p-8 mb-8 pb-4'>
+    <div className='bg border border-sky-900 rounded-lg p-8 pb-4 mb-16'>
       <h3 className='text-xl mb-8 font-semibold border-b border-sky-900 pb-4'>
         Chủ đề
       </h3>
