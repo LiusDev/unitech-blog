@@ -1,6 +1,7 @@
 import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
+import Image from 'next/image';
 import { RichText } from '@graphcms/rich-text-react-renderer';
 
 const PostDetail = ({ post }) => {
@@ -18,11 +19,11 @@ const PostDetail = ({ post }) => {
       <div className='px-4 lg:px-0'>
         <div className='flex items-center mb-8 w-full'>
           <div className='flex items-center w-full lg:w-auto mr-8'>
-            <img
+            <Image
               src={post.author.photo.url}
               alt={post.author.name}
-              height="30px"
-              width="30px"
+              height={30}
+              width={30}
               className='align-middle rounded-full aspect-square object-cover'
             />
             <p className='inline align-middle ml-2 subtitle'>
@@ -76,7 +77,7 @@ const PostDetail = ({ post }) => {
             },
             // image block
             img: ({ src, alt, width, height }) => (
-              <img
+              <Image
                 src={src}
                 alt={alt}
                 width={width}
