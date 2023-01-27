@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 import { getCategories, getCategoryPost } from '../../services';
-import { PostCard, Categories, Loader, PageRate } from '../../components';
+import { PostCard, Categories, Loader, PageRate, Button } from '../../components';
 
 const CategoryPost = ({ posts }) => {
 
@@ -17,22 +17,20 @@ const CategoryPost = ({ posts }) => {
   //not found page
   if (posts.length === 0) {
     return (
-        <div className='container mx-auto px-5 md:px-10 mb-8 min-h-screen'>
-            <Head>
-                <title>Không tìm thấy trang :{`(`}</title>
-            </Head>
-            <div className='col-span-1 lg:col-span-8'>
-                <div className='text-center mt-40'>
-                    <h1 className='text-4xl font-bold mb-4 text-white'>Không tìm thấy trang :{`(`}</h1>
-                    <p className='text-xl mb-4 text-white'>Trang bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.</p>
-                    <Link href="/">
-                        <span className='transition duration-400 transform hover:-translate-y-1 inline-block bg-pink-600 font-medium rounded-full text-white px-8 py-3 cursor-pointer mb-4'>
-                        Trang chủ
-                        </span>
-                    </Link>
-                </div>
+      <div className='min-w-screen min-h-screen flex items-center justify-center'>
+        <Head>
+            <title>{"Không tìm thấy trang :("}</title>
+        </Head>
+        <div className='col-span-1 lg:col-span-8'>
+            <div className='text-center mt-40'>
+                <h1 className='text-4xl font-bold mb-4'>{"Không tìm thấy trang :("}</h1>
+                <p className='text-xl mb-4'>Trang bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.</p>
+                <Button href="/">
+                    Trang chủ
+                </Button>
             </div>
         </div>
+      </div>
     )
   }
 

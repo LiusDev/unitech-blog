@@ -4,9 +4,7 @@ import Head from 'next/head'
 
 import { getPosts, getPostDetails } from '../../services'
 
-import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader, PageRate } from '../../components'
-
-import Link from 'next/link'
+import { PostDetail, Categories, PostWidget, Comments, CommentsForm, Loader, PageRate, Button } from '../../components'
 
 const PostDetails = ({ post }) => {
   const router = useRouter();
@@ -18,19 +16,17 @@ const PostDetails = ({ post }) => {
   //not found page
   if (!post) {
     return (
-        <div className='container mx-auto px-5 md:px-10 mb-8 min-h-screen'>
+        <div className='min-w-screen min-h-screen flex items-center justify-center'>
             <Head>
-                <title>Không tìm thấy trang :{`(`}</title>
+                <title>{"Không tìm thấy trang :("}</title>
             </Head>
             <div className='col-span-1 lg:col-span-8'>
                 <div className='text-center mt-40'>
-                    <h1 className='text-4xl font-bold mb-4 text-white'>Không tìm thấy trang :{`(`}</h1>
-                    <p className='text-xl mb-4 text-white'>Trang bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.</p>
-                    <Link href="/">
-                        <span className='transition duration-400 transform hover:-translate-y-1 inline-block bg-pink-600 font-medium rounded-full text-white px-8 py-3 cursor-pointer mb-4'>
+                    <h1 className='text-4xl font-bold mb-4'>{"Không tìm thấy trang :("}</h1>
+                    <p className='text-xl mb-4'>Trang bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.</p>
+                    <Button href="/">
                         Trang chủ
-                        </span>
-                    </Link>
+                    </Button>
                 </div>
             </div>
         </div>
