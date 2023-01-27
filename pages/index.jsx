@@ -14,24 +14,23 @@ export default function Home({ posts }) {
   
   posts = sortedPosts(posts);
 
-  // TODO : add view more button
-  const [noOfPost, setNoOfPost] = useState(5);
-  let showPosts = posts.slice(0, noOfPost);
+  const [limitPost, setLimitPost] = useState(5);
+  let showPosts = posts.slice(0, limitPost);
 
   const [showViewMore, setShowViewMore] = useState(false);
   
   const handleViewMore = () => {
-    setNoOfPost(noOfPost + 5);
-    showPosts = posts.slice(0, noOfPost);
+    setLimitPost(limitPost + 5);
+    showPosts = posts.slice(0, limitPost);
   }
 
   useEffect(() => {
-    if (posts.length > noOfPost) {
+    if (posts.length > limitPost) {
       setShowViewMore(true);
     } else {
       setShowViewMore(false);
     }
-  }, [noOfPost])
+  }, [limitPost])
   
   return (
     <div className="container mx-auto px-5 md:px-10 mb-8 mt-20 min-h-screen">

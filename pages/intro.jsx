@@ -1,5 +1,5 @@
 import React from 'react'
-import { Categories, Intro, PageRate, PostWidget } from '../components'
+import { Categories, Intro, PostWidget } from '../components'
 import Head from 'next/head'
 
 const intro = () => {
