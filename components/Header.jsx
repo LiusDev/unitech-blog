@@ -5,6 +5,7 @@ import Link from 'next/link';
 const Header = () => {
 
   return (
+    // TODO search post by title
     <header className='fixed bg z-50 top-0 left-0 right-0 flex justify-center items-center mb-20px border-b border-sky-900'>
         <div className='container w-full inline-block px-5 lg:px-10 py-2 text-center md:text-left'>
             <div className='md:float-left block'>

@@ -1,8 +1,13 @@
+import Head from 'next/head'
 import React from 'react'
+import { FanpageScript } from '.';
 
 const Footer = () => {
   return (
     <footer className='bg border-t border-sky-900 px-4 py-8 md:px-12 lg:px-16 relative bottom-0 left-0 right-0'>
+        <Head>
+            <FanpageScript />
+        </Head>
         <div className='flex flex-col md:flex-row md:space-x-16 justify-center md:items-center items-start'>
             <a href="https://www.facebook.com/unitym.fpt/" target="_blank" className='mb-3 md:mb-0'>
                 <img src="https://imgur.com/fVrZMJb.png" alt="logo" className='aspect-square rounded-full object-cover h-32'/>

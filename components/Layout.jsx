@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Footer, MetaMessenger} from '.'
+import { Header, Footer, MetaMessenger, FanpageScript} from '.'
 
 const Layout = ({ children }) => {
   return (

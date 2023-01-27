@@ -1,14 +1,23 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Button = ({ href, children }) => {
+const Button = ({ href, onClick, children }) => {
+  let BtnType = 'Link';
+  const props = {};
+  if (href) {
+    BtnType = Link;
+    props.href = href;
+  } else {
+    BtnType = 'button';
+    props.onClick = onClick;
+  }
   return (
-    <Link
-        href={href}
-        className='bg-blue-700 inline-block rounded-full font-bold text-lg px-8 py-3 transition-all hover:bg-blue-800'
+    <BtnType
+        {...props}
+        className='bg-blue-700 inline-block rounded-full font-bold text-lg px-8 py-3 transition-all hover:bg-blue-800 cursor-pointer'
     >
         {children}
-    </Link>
+    </BtnType>
   )
 }
 
