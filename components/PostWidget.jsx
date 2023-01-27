@@ -25,7 +25,6 @@ const PostWidget = ({ categories, slug }) => {
         {slug ? 'Bài viết cùng chủ đề' : 'Bài viết gần đây'}
       </h3>
       {relatedPosts.map(post => {
-        {(post.node) ? post = post.node : post}
         return (
           <div key={post.slug} className='flex items-center w-full mb-4'>
               <div className='w-16 flex-none'>

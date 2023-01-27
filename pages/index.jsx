@@ -14,7 +14,8 @@ export default function Home({ posts }) {
   posts = sortedPosts(posts);
 
   return (
-    //TODO split posts into multiple pages
+    // TODO split posts into multiple pages
+    // TODO search post by title 
     <div className="container mx-auto px-5 md:px-10 mb-8 mt-20 min-h-screen">
       <Head>
         <title>UniTech Blog</title>

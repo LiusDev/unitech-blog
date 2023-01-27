@@ -42,8 +42,8 @@ const Footer = () => {
                     <a href="https://www.facebook.com/unitym.fpt" target="_blank">Fanpage</a>
                 </div> */}
                 <div className='flex items-center space-x-3'>
-                    <div class="fb-page" data-href="https://www.facebook.com/unitym.fpt" data-tabs="" data-width="300" data-height="120" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                        <blockquote cite="https://www.facebook.com/unitym.fpt" class="fb-xfbml-parse-ignore">
+                    <div className="fb-page" data-href="https://www.facebook.com/unitym.fpt" data-tabs="" data-width="300" data-height="120" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/unitym.fpt" className="fb-xfbml-parse-ignore">
                             <a href="https://www.facebook.com/unitym.fpt" target='_blank'>UniTym</a>
                         </blockquote>
                     </div>
