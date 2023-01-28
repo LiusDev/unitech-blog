@@ -1,6 +1,6 @@
 # UniTym Blog
 
-Đây là dự án trong bộ môn SSG104 của nhóm UniTym lớp SE1748 Đại học FPT
+Đây là dự án UniTech Blog trong bộ môn SSG104 của nhóm UniTym lớp SE1748 Đại học FPT
 
 ![Preview](./public/preview.png)
 
