@@ -2,7 +2,7 @@
 
 Đây là dự án trong bộ môn SSG104 của nhóm UniTym lớp SE1748 Đại học FPT
 
-![Preview](./public/preview.webp)
+![Preview](./public/preview.png)
 
 ## Deploy
 
