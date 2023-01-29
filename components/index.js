@@ -15,3 +15,4 @@ export {default as MetaMessenger} from './MetaMessenger';
 export {default as Button} from './Button';
 export {default as FanpageScript} from './FanpageScript';
 export {default as NotFoundPage} from './NotFoundPage';
+export {default as SearchBar} from './SearchBar';

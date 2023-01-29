@@ -32,8 +32,8 @@ export default function Home({ posts }) {
         }
     }, [limitPost])
 
+    // TODO: fix responsive
     return (
-        // TODO: fix responsive
         <div className="container mx-auto px-5 md:px-10 mb-8 mt-20 min-h-screen">
             <Head>
                 <title>UniTech Blog</title>

@@ -3,8 +3,8 @@ import moment from 'moment';
 import Image from 'next/image';
 import Link from 'next/link';
 
+// TODO: Re-CSS featured post card
 const FeaturedPostCard = ({ post }) => (
-    // TODO: Re-CSS featured post card
     <div className="relative h-72 overflow-hidden group hover:rounded-lg">
         <div
             className="absolute rounded-lg bg-center bg-no-repeat bg-cover blur-[2px] shadow-md inline-block w-full h-72 transition duration-400 group-hover:scale-110 group-hover:rounded-lg"
