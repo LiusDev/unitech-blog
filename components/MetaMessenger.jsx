@@ -2,13 +2,13 @@ import React from 'react'
 import Script from 'next/script';
 
 const MetaMessenger = () => {
-  return (
-    <div>
-        <div id="fb-root"></div>
-        <div id="fb-customer-chat" className="fb-customerchat"></div>
+    return (
+        <div>
+            <div id="fb-root"></div>
+            <div id="fb-customer-chat" className="fb-customerchat"></div>
 
-        <Script strategy="lazyOnload">
-            {`
+            <Script strategy="lazyOnload">
+                { `
                 var chatbox = document.getElementById('fb-customer-chat');
                 chatbox.setAttribute("page_id", "107446722251445");
                 chatbox.setAttribute("attribution", "biz_inbox");
@@ -28,10 +28,10 @@ const MetaMessenger = () => {
                     fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));
             `}
-        </Script>
-    </div>
-    
-  )
+            </Script>
+        </div>
+
+    )
 }
 
 export default MetaMessenger
