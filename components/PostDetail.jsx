@@ -53,6 +53,8 @@ const PostDetail = ({ post }) => {
                         h1: ({ children }) => <h1>{ children }</h1>,
                         h2: ({ children }) => <h2>{ children }</h2>,
                         h3: ({ children }) => <h3>{ children }</h3>,
+                        h4: ({ children }) => <h4>{ children }</h4>,
+                        h5: ({ children }) => <h5>{ children }</h5>,
                         p: ({ children }) => <p className='mb-4'>{ children }</p>,
                         a: ({ children, openInNewTab, href, rel, ...rest }) => {
                             if (href.match(/^https?:\/\/|^\/\//i)) {
