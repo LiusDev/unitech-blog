@@ -15,7 +15,7 @@ const Header = () => {
                         </span>
                     </Link>
                 </div>
-                <div className='hidden md:inline-block md:grow mx-48'>
+                <div className='hidden xl:inline-block xl:w-1/3 xl:max-w-lg'>
                     <SearchBar />
                 </div>
                 <div className='hidden md:flex md:items-center'>
