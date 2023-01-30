@@ -253,5 +253,41 @@ export const getCategoryPost = async (slug) => {
     const result = await request(graphqlAPI, query, { slug });
   
     return result.postsConnection.edges;
-  };
-  
+};
+
+// export const getSearchPost = async (search) => {
+//     const query = gql`
+//         query GetSearchPost($search: String!) {
+//             postsConnection(where: {title_contains: $search}) {
+//                 edges {
+//                     cursor
+//                     node {
+//                         author {
+//                             bio
+//                             name
+//                             id
+//                             photo {
+//                                 url
+//                             }
+//                         }
+//                         createdAt
+//                         slug
+//                         title
+//                         excerpt
+//                         featuredImage {
+//                             url
+//                         }
+//                         categories {
+//                             name
+//                             slug
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     `;
+
+//     const result = await request(graphqlAPI, query, { search });
+
+//     return result.postsConnection.edges;
+// };
