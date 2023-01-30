@@ -6,7 +6,7 @@ import { getPosts } from '../services';
 
 const SearchBar = () => {
 
-    const [searchValue, setSearchValue] = useState(''); // state for search input value
+    const [searchValue, setSearchValue] = useState('');
     const handleSearchInputChanges = (e) => {
         setSearchValue(e.target.value);
     }
@@ -50,7 +50,6 @@ const SearchBar = () => {
     }
 
     return (
-        // create a search bar UI using tailwind css
         <div className='relative' ref={ searchRef }>
             <input
                 type="text"
@@ -60,7 +59,6 @@ const SearchBar = () => {
                 className="border border-sky-900 w-full h-10 px-5 pr-10 text-sm placeholder-gray-400 bg rounded-full outline-none focus:ring-2 focus:ring-sky-900 transition-all"
             />
             {
-                // show search results when user types something in input
                 searchValue.length > 1 && searchFocus &&
                 <div className='absolute left-0 top-12 w-full bg-neutral-800 opacity-95 rounded-md px-5 py-2'>
                     {
@@ -69,7 +67,12 @@ const SearchBar = () => {
                             post = post.node;
                             return (
                                 <div key={ post.slug } className='flex items-center w-full mb-4'>
-                                    <Link href={ `/post/${post.slug}` } key={ post.slug } className='flex items-center' onClick={ handlePostSelect }>
+                                    <Link
+                                        href={ `/post/${post.slug}` }
+                                        key={ post.slug }
+                                        className='flex items-center w-full'
+                                        onClick={ handlePostSelect }>
+
                                         <Image
                                             src={ post.featuredImage.url }
                                             alt={ post.title }

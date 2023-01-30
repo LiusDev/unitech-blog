@@ -33,7 +33,6 @@ export default function Home({ posts }) {
         }
     }, [limitPost])
 
-    // TODO: fix responsive
     return (
         <div className="container mx-auto px-5 md:px-10 mb-8 mt-20 min-h-screen">
             <Head>
@@ -43,7 +42,7 @@ export default function Home({ posts }) {
                 <meta name="google-site-verification" content="0sm1eSTPeRSerzZp2Kf_dIJnZAdjTXkhGF-JmCRap9M" />
             </Head>
             <FeaturedPosts />
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-12">
                 <div className='lg:col-span-8 col-span-1'>
                     { showPosts.map((post, index) => (
                         <PostCard key={ index } post={ post.node } />
@@ -58,7 +57,7 @@ export default function Home({ posts }) {
                     </div>
                 </div>
                 <div className="lg:col-span-4 col-span-1">
-                    <div className='lg:sticky relative top-20'>
+                    <div className='lg:sticky relative lg:top-20'>
                         <PostWidget categories={ undefined } slug={ undefined } />
                         <Categories />
                     </div>
