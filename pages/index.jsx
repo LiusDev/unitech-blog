@@ -5,6 +5,7 @@ import { getPosts } from '../services'
 import { FeaturedPosts } from '../sections';
 
 export default function Home({ posts }) {
+    //TODO: add icon library
 
     const sortedPosts = (posts) => {
         return posts.sort((a, b) => {

@@ -1,5 +1,3 @@
-import React, { useContext, useState, useEffect } from 'react'
-
 import Link from 'next/link';
 import SearchBar from './SearchBar';
 

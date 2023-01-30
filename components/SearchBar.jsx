@@ -64,29 +64,26 @@ const SearchBar = () => {
                 searchValue.length > 1 && searchFocus &&
                 <div className='absolute left-0 top-12 w-full bg-neutral-800 opacity-95 rounded-md px-5 py-2'>
                     {
-                        searchPost.length === 0 &&
-                        <div className='flex items-center w-full mb-4'>
-                            <span className='text-sm'>{ `Không tìm thấy kết quả nào cho '${searchValue}'` }</span>
-                        </div>
-
+                        searchPost.length !== 0 &&
+                        searchPost.map(post => {
+                            post = post.node;
+                            return (
+                                <div key={ post.slug } className='flex items-center w-full mb-4'>
+                                    <Link href={ `/post/${post.slug}` } key={ post.slug } className='flex items-center' onClick={ handlePostSelect }>
+                                        <Image
+                                            src={ post.featuredImage.url }
+                                            alt={ post.title }
+                                            height={ 60 }
+                                            width={ 60 }
+                                            className='align-middle rounded-md object-contain'
+                                        />
+                                        <span className='text-sm ml-4 hover:text-blue-400 transition-all'>{ post.title }</span>
+                                    </Link>
+                                </div>
+                            )
+                        }) ||
+                        <span className='text-sm'>{ `Không tìm thấy kết quả nào cho '${searchValue}'` }</span>
                     }
-                    { searchPost.map(post => {
-                        post = post.node;
-                        return (
-                            <div key={ post.slug } className='flex items-center w-full mb-4'>
-                                <Link href={ `/post/${post.slug}` } key={ post.slug } className='flex items-center' onClick={ handlePostSelect }>
-                                    <Image
-                                        src={ post.featuredImage.url }
-                                        alt={ post.title }
-                                        height={ 60 }
-                                        width={ 60 }
-                                        className='align-middle rounded-md object-contain'
-                                    />
-                                    <span className='text-sm ml-4 hover:text-blue-400 transition-all'>{ post.title }</span>
-                                </Link>
-                            </div>
-                        )
-                    }) }
                 </div>
             }
         </div>
