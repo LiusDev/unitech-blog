@@ -15,8 +15,8 @@ const Header = () => {
                         </span>
                     </Link>
                 </div>
-                <div className='hidden md:inline-block'>
-                    {/* <SearchBar /> */ }
+                <div className='hidden md:inline-block md:grow mx-48'>
+                    <SearchBar />
                 </div>
                 <div className='hidden md:flex md:items-center'>
                     <Link href="/" className='ml-8 font-semibold navHover'>Trang chủ</Link>
