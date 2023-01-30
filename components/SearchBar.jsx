@@ -60,13 +60,13 @@ const SearchBar = () => {
             />
             {
                 searchValue.length > 1 && searchFocus &&
-                <div className='absolute left-0 top-12 w-full bg-neutral-800 opacity-95 rounded-md px-5 py-2'>
+                <div className='absolute left-0 top-12 w-full bg-neutral-800 border border-sky-900 rounded-md px-5 py-2'>
                     {
                         searchPost.length !== 0 &&
                         searchPost.map(post => {
                             post = post.node;
                             return (
-                                <div key={ post.slug } className='flex items-center w-full mb-4'>
+                                <div key={ post.slug } className='flex items-center w-full my-4'>
                                     <Link
                                         href={ `/post/${post.slug}` }
                                         key={ post.slug }

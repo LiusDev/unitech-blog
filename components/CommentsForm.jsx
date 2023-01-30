@@ -76,7 +76,7 @@ const CommentsForm = ({ slug }) => {
     };
 
     return (
-        <div className="bg border border-sky-900 rounded-lg p-8 pb-12 mb-8">
+        <div className="bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border border-sky-900 rounded-lg p-8 pb-12 mb-8">
             <h3 className="text-xl mb-8 font-semibold border-b border-sky-900 pb-4">Để lại bình luận của bạn</h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
                 <input

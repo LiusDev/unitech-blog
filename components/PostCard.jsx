@@ -6,7 +6,7 @@ import Button from './Button'
 
 const PostCard = ({ post }) => {
     return (
-        <div className='bg border border-sky-900 rounded-lg p-0 lg:p-8 pb-12 mb-8'>
+        <div className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border border-sky-900 rounded-lg p-0 lg:p-8 pb-12 mb-8'>
 
             <Link href={ `/post/${post.slug}` } key={ post.slug }>
                 <div className='relative overflow-hidden pb-80 mb-6 cursor-pointer shadow-lg rounded-t-lg lg:rounded-lg'>
