@@ -37,13 +37,13 @@ const FeaturedPosts = () => {
     }, []);
 
     const customLeftArrow = (
-        <div className="left-arrow absolute arrow-btn flex items-center justify-center py-2 cursor-pointer bg-blue-700 rounded-full">
+        <div className="left-arrow absolute arrow-btn flex items-center justify-center py-2 cursor-pointer">
             <FaAngleLeft />
         </div>
     );
 
     const customRightArrow = (
-        <div className="right-arrow absolute arrow-btn flex items-center justify-center py-2 cursor-pointer bg-blue-700 rounded-full">
+        <div className="right-arrow absolute arrow-btn flex items-center justify-center py-2 cursor-pointer">
             <FaAngleRight />
         </div>
     );

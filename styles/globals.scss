@@ -140,11 +140,10 @@ p {
 
 .react-multi-carousel-list {
   & .arrow-btn {
-    transition: width 300ms ease;
-    width: 40px;
+    transition: all 300ms ease;
 
     &:hover {
-      width: 50px;
+      transform: scale(1.1);
     }
   }
 }
@@ -159,12 +158,12 @@ a {
 }
 
 .left-arrow {
-  left: 0px;
+  left: -8px;
   font-size: 32px;
 }
 
 .right-arrow {
-  right: 0px;
+  right: -8px;
   font-size: 32px;
 }
 
