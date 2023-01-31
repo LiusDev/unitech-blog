@@ -3,7 +3,6 @@ import moment from 'moment';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// TODO: Re-CSS featured post card
 const FeaturedPostCard = ({ post }) => {
     return (
         <div className='h-72 bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border border-sky-900 relative rounded-lg overflow-hidden' >
