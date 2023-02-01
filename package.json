@@ -7,9 +7,9 @@
   },
   "dependencies": {
     "@babel/helper-module-imports": "^7.18.6",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "@graphcms/rich-text-react-renderer": "^0.6.1",
     "@vercel/analytics": "^0.1.8",
+    "babel-plugin-macros": "^3.1.0",
     "graphql": "^16.6.0",
     "graphql-request": "^5.1.0",
     "html-react-parser": "^3.0.8",
