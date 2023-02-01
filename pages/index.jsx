@@ -38,7 +38,7 @@ export default function Home({ posts }) {
                 <title>UniTech Blog</title>
                 <link rel="icon" href="/favicon.ico" />
                 <meta property="og:image" content="/ogImg.png" />
-                <meta name="google-site-verification" content="0sm1eSTPeRSerzZp2Kf_dIJnZAdjTXkhGF-JmCRap9M" />
+                <meta name="google-site-verification" content="3efLReZ1VSvaHUpupLzLSTBLOUkxKVlLrOiHKiaA_wQ" />
             </Head>
             <FeaturedPosts />
             <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-12">
