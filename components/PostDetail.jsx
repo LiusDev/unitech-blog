@@ -8,7 +8,7 @@ const PostDetail = ({ post }) => {
     const renderPost = post.content.raw;
 
     return (
-        <div className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border border-sky-900 rounded-lg lg:p-8 pb-12 mt-20 mb-8 overflow-hidden'>
+        <div className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border border-sky-900 rounded-lg lg:p-8 pb-12 mb-8 overflow-hidden'>
             <div className='relative overflow-hidden shadow-md mb-6'>
                 <img
                     src={ post.featuredImage.url }

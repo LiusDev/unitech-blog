@@ -46,7 +46,7 @@ export default function Home({ posts }) {
                     { showPosts.map((post, index) => (
                         <PostCard key={ index } post={ post.node } />
                     )) }
-                    <div className='float-right'>
+                    <div className='float-right mb-8 lg:mb-0'>
                         {
                             showViewMore &&
                             <Button onClick={ () => handleViewMore() }>
