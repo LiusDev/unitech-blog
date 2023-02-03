@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head'
+import { FaAngleDown } from 'react-icons/fa';
 import { PostCard, Categories, PostWidget, Button } from '../components';
 import { getPosts } from '../services'
 import { FeaturedPosts } from '../sections';
@@ -46,11 +47,14 @@ export default function Home({ posts }) {
                     { showPosts.map((post, index) => (
                         <PostCard key={ index } post={ post.node } />
                     )) }
-                    <div className='float-right mb-8 lg:mb-0'>
+                    <div className='text-center mb-8 lg:mb-0'>
                         {
                             showViewMore &&
                             <Button onClick={ () => handleViewMore() }>
-                                <span className='inline-block'>Xem thêm <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 inline-block"><path fill='#e2e8f0' d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg></span>
+                                <span className='flex flex-col items-center justify-center'>
+                                    <span className='text-sm'>Xem thêm</span>
+                                    <FaAngleDown className="w-4 h-4 group-hover:translate-y-1 transition-all" />
+                                </span>
                             </Button>
                         }
                     </div>

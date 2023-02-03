@@ -8,10 +8,12 @@ const FeaturedPostCard = ({ post }) => {
         <div className='h-72 bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border border-sky-900 relative rounded-lg overflow-hidden' >
             <Link href={ `/post/${post.slug}` }>
                 <div className='h-full w-full relative'>
-                    <div
-                        style={ { backgroundImage: `url('${post.featuredImage.url}')` } }
-                        className='h-2/5 w-full bg-cover bg-center'
-                    />
+                    <div className='h-2/5 w-full overflow-hidden group'>
+                        <div
+                            style={ { backgroundImage: `url('${post.featuredImage.url}')` } }
+                            className='h-full w-full bg-cover bg-center group-hover:scale-105 transition-all'
+                        />
+                    </div>
                     <div className='p-4 h-3/5 flex flex-col justify-between'>
                         <p className='font-semibold hover:text-blue-400 transition duration-400'>{ post.title }</p>
                         <div className='flex items-center justify-between'>
