@@ -53,39 +53,38 @@ const SearchBar = () => {
         <div className='relative' ref={ searchRef }>
             <input
                 type="text"
-                placeholder="Tìm kiếm..."
+                placeholder="Tìm kiếm bài viết..."
                 value={ searchValue }
                 onChange={ handleSearchInputChanges }
                 className="border border-sky-900 w-full h-10 px-5 pr-10 text-sm placeholder-gray-400 bg rounded-full outline-none focus:ring-2 focus:ring-sky-900 transition-all"
             />
             {
                 searchValue.length > 1 && searchFocus &&
-                <div className='absolute left-0 top-12 w-full bg-neutral-800 border border-sky-900 rounded-md px-5 py-2'>
+                <div className='absolute left-0 top-12 w-full bg-neutral-800 border border-sky-900 rounded-md overflow-hidden'>
                     {
                         searchPost.length !== 0 &&
                         searchPost.map(post => {
                             post = post.node;
                             return (
-                                <div key={ post.slug } className='flex items-center w-full my-4'>
+                                <div key={ post.slug } className='flex items-center w-full group hover:bg-neutral-900'>
                                     <Link
                                         href={ `/post/${post.slug}` }
                                         key={ post.slug }
-                                        className='flex items-center w-full'
+                                        className='flex items-center w-full px-5 py-4'
                                         onClick={ handlePostSelect }>
-
                                         <Image
                                             src={ post.featuredImage.url }
                                             alt={ post.title }
                                             height={ 60 }
                                             width={ 60 }
-                                            className='align-middle rounded-md object-contain'
+                                            className='align-middle rounded-md object-contain inline-block'
                                         />
-                                        <span className='text-sm ml-4 hover:text-blue-400 transition-all'>{ post.title }</span>
+                                        <span className='inline-block text-sm ml-4'>{ post.title }</span>
                                     </Link>
                                 </div>
                             )
                         }) ||
-                        <span className='text-sm'>{ `Không tìm thấy kết quả nào cho '${searchValue}'` }</span>
+                        <div className='text-sm px-5 py-2 select-none cursor-not-allowed'>{ `Không tìm thấy kết quả nào cho '${searchValue}'` }</div>
                     }
                 </div>
             }
