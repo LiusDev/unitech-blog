@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border-t border-sky-900 px-4 py-8 md:px-12 lg:px-16 relative bottom-0 left-0 right-0'>
             <div className='flex flex-col md:flex-row md:space-x-16 justify-center md:items-center items-start'>
-                <a href="https://www.facebook.com/unitech.blog.fpt" target="_blank" className='mb-3 md:mb-0'>
+                <a href="https://www.facebook.com/SSG.UniTech.Blog" target="_blank" className='mb-3 md:mb-0'>
                     <img src="https://imgur.com/fVrZMJb.png" alt="logo" className='aspect-square rounded-full object-cover h-32' />
                 </a>
                 <div className='flex flex-col space-y-4 mb-3 md:mb-0'>
@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col space-y-4 mb-3 md:mb-0'>
                     <div className='flex items-center space-x-3'>
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Funitech.blog.fpt&tabs&width=280&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="130" style={ { border: "none", overflow: "hidden" } } scrolling="no" frameborder="0" allowFullScreen={ true } allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSSG.UniTech.Blog&tabs&width=280&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="130" style={ { border: "none", overflow: "hidden" } } scrolling="no" frameborder="0" allowFullScreen={ true } allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                 </div>
             </div>
