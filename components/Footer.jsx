@@ -1,15 +1,11 @@
 import Head from 'next/head'
 import React from 'react'
-import { FanpageScript } from '.';
 
 const Footer = () => {
     return (
         <footer className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border-t border-sky-900 px-4 py-8 md:px-12 lg:px-16 relative bottom-0 left-0 right-0'>
-            <Head>
-                <FanpageScript />
-            </Head>
             <div className='flex flex-col md:flex-row md:space-x-16 justify-center md:items-center items-start'>
-                <a href="https://www.facebook.com/unitym.fpt/" target="_blank" className='mb-3 md:mb-0'>
+                <a href="https://www.facebook.com/unitech.blog.fpt" target="_blank" className='mb-3 md:mb-0'>
                     <img src="https://imgur.com/fVrZMJb.png" alt="logo" className='aspect-square rounded-full object-cover h-32' />
                 </a>
                 <div className='flex flex-col space-y-4 mb-3 md:mb-0'>
@@ -42,16 +38,8 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex flex-col space-y-4 mb-3 md:mb-0'>
-                    {/* <div className='flex items-center space-x-3'>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6"><path fill="#60a5fa" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
-                    <a href="https://www.facebook.com/unitym.fpt" target="_blank">Fanpage</a>
-                </div> */}
                     <div className='flex items-center space-x-3'>
-                        <div className="fb-page" data-href="https://www.facebook.com/unitym.fpt" data-tabs="" data-width="300" data-height="120" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                            <blockquote cite="https://www.facebook.com/unitym.fpt" className="fb-xfbml-parse-ignore">
-                                <a href="https://www.facebook.com/unitym.fpt" target='_blank'>UniTym</a>
-                            </blockquote>
-                        </div>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Funitech.blog.fpt&tabs&width=280&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="130" style={ { border: "none", overflow: "hidden" } } scrolling="no" frameborder="0" allowFullScreen={ true } allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                 </div>
             </div>
