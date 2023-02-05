@@ -7,10 +7,8 @@ const Header = () => {
         <header className='fixed bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 z-50 top-0 left-0 right-0 flex justify-center items-center mb-20px border-b border-sky-900'>
             <div className='container flex items-center justify-between px-5 lg:px-10 py-2'>
                 <div className='md:float-left block'>
-                    <Link href='/'>
-                        <span className="cursor-pointer font-bold text-4xl drop-shadow-xl hover:text-blue-400 transition-all">
-                            UniTech Blog
-                        </span>
+                    <Link href='/' className='cursor-pointer'>
+                        <img src="/logo.png" alt="logo" className='h-10' />
                     </Link>
                 </div>
                 <div className='hidden xl:inline-block xl:w-1/3 xl:max-w-lg'>
