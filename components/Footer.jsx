@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border-t border-sky-900 px-4 py-8 md:px-12 lg:px-16 relative bottom-0 left-0 right-0'>
             <div className='flex flex-col md:flex-row md:space-x-16 justify-center md:items-center items-start'>
                 <a href="https://www.facebook.com/SSG.UniTech.Blog" target="_blank" className='mb-3 md:mb-0'>
-                    <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/328969786_857748792160486_3227700199408000587_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ouMIJ1nuHG8AX8_HICt&_nc_ht=scontent.fhan18-1.fna&oh=00_AfAdpDFYgSoJlKTznmHPGio6xVj2dEJDo0EP282Jz7UkYQ&oe=63E47DED" alt="logo" className='aspect-square rounded-full object-cover h-32' />
+                    <img src="/Logo-1.png" alt="logo" className='aspect-square rounded-full object-cover h-32' />
                 </a>
                 <div className='flex flex-col space-y-4 mb-3 md:mb-0'>
                     <div className='flex items-center space-x-3'>

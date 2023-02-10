@@ -53,12 +53,12 @@ const CategoryPost = ({ posts }) => {
 
 
   return (
-    <div className="container mx-auto px-10 mb-8 min-h-screen">
+    <div className="container mx-auto px-5 md:px-10 mb-8 mt-20 min-h-screen">
       <Head>
         <title>{`Chủ đề: ${categoryName}`}</title>
       </Head>
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <div className="col-span-1 lg:col-span-8 mt-20">
+      <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-12">
+        <div className="lg:col-span-8 col-span-1">
           <div className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border border-sky-900 rounded-lg px-8 py-4 mb-8'>
             <p className='text-xl font-bold'>Chủ đề: <span className='text-blue-400'>{`${categoryName}`}</span></p>
           </div>
@@ -74,8 +74,8 @@ const CategoryPost = ({ posts }) => {
             }
           </div>
         </div>
-        <div className="col-span-1 lg:col-span-4">
-          <div className="relative lg:sticky top-20">
+        <div className="lg:col-span-4 col-span-1">
+          <div className="lg:sticky relative lg:top-20">
             <Categories />
           </div>
         </div>
