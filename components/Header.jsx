@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SearchBar from './SearchBar';
+import HamburgurMenu from './HamburgurMenu';
 
 const Header = () => {
 
@@ -11,14 +12,15 @@ const Header = () => {
                         <img src="/logo.png" alt="logo" className='h-10' />
                     </Link>
                 </div>
-                <div className='hidden xl:inline-block xl:w-1/3 xl:max-w-lg'>
+                <div className='hidden md:inline-block xl:w-1/3 xl:max-w-lg'>
                     <SearchBar />
                 </div>
-                <div className='hidden md:flex md:items-center'>
+                <nav className='hidden lg:flex'>
                     <Link href="/" className='ml-8 font-semibold navHover'>Trang chủ</Link>
                     <Link href="/intro" className='ml-8 font-semibold navHover'>Giới thiệu</Link>
                     <Link href="https://forms.gle/inqEudBF7uQwJ1po6" target="_blank" className='ml-8 font-semibold navHover'>Đóng góp ý kiến</Link>
-                </div>
+                </nav>
+                <HamburgurMenu />
             </div>
         </header>
     )
