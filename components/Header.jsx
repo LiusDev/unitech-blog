@@ -6,18 +6,21 @@ import { FaHome, FaInfoCircle, FaComment } from 'react-icons/fa'
 
 const navList = [
     {
+        id: 1,
         name: 'Trang chủ',
         href: '/',
         target: '_self',
         icon: <FaHome className='text-xl mr-2' />
     },
     {
+        id: 2,
         name: 'Giới thiệu',
         href: '/intro',
         target: '_self',
         icon: <FaInfoCircle className='text-xl mr-2' />
     },
     {
+        id: 3,
         name: 'Đóng góp ý kiến',
         href: 'https://forms.gle/inqEudBF7uQwJ1po6',
         target: '_blank',
@@ -39,7 +42,7 @@ const Header = () => {
                 </div>
                 <nav className='hidden lg:flex'>
                     { navList.map(item => (
-                        <Link key={ item } href={ item.href } target={ item.target } className='ml-8 font-semibold navHover'>{ item.name }</Link>
+                        <Link key={ item.id } href={ item.href } target={ item.target } className='ml-8 font-semibold navHover'>{ item.name }</Link>
                     )) }
                 </nav>
                 <SearchButton />

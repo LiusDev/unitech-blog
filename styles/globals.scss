@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: #e2e8f0;
-
+  overflow-x: hidden;
   &:before {
     content: '';
     content: "";
