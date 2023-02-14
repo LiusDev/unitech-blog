@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useLayoutEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 
 const HamburgerMenu = ({ navList }) => {
@@ -10,11 +10,11 @@ const HamburgerMenu = ({ navList }) => {
 
     const menuRef = useRef(null);
     const menuBtnRef = useRef(null);
-    useLayoutEffect(() => {
+    useEffect(() => {
         //check if click outside without exit btn
         const checkIfClickedOutside = (e) => {
             if (menuRef.current && !menuRef.current.contains(e.target) && !menuBtnRef.current.contains(e.target)) {
-                setMenuActive(!menuActive);
+                setMenuActive(false);
             }
         }
 
