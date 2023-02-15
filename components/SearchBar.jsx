@@ -50,7 +50,7 @@ const SearchBar = () => {
     }
 
     return (
-        <div className='relative' ref={ searchRef }>
+        <div className='relative inline-block xl:w-1/3 xl:max-w-lg' ref={ searchRef }>
             <input
                 type="text"
                 placeholder="Tìm kiếm bài viết..."
