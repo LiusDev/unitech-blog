@@ -7,12 +7,14 @@ const HamburgerMenu = ({ navList }) => {
 
     const handleMenu = () => {
         setMenuActive(!menuActive);
-        menuActive ? enableBodyScroll(document) : disableBodyScroll(document);
     }
 
     const menuRef = useRef(null);
     const menuBtnRef = useRef(null);
     useEffect(() => {
+        // disable body scroll when menu is active
+        menuActive ? disableBodyScroll(document) : enableBodyScroll(document);
+
         //check if click outside without exit btn
         const checkIfClickedOutside = (e) => {
             if (menuRef.current && !menuRef.current.contains(e.target) && !menuBtnRef.current.contains(e.target)) {
@@ -25,7 +27,7 @@ const HamburgerMenu = ({ navList }) => {
         return () => {
             document.removeEventListener("mousedown", checkIfClickedOutside);
         };
-    }, []);
+    }, [menuActive]);
 
     return (
         <>
