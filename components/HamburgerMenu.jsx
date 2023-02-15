@@ -42,7 +42,7 @@ const HamburgerMenu = ({ navList }) => {
             <div className={ `fixed w-full h-screen top-full left-0 right-0 bottom-0 transition-all bg-zinc-900/90 ${menuActive ? 'opacity-100' : 'opacity-0'}` }></div>
             <nav
                 ref={ menuRef }
-                className={ `fixed top-full -left-3/4 w-72 h-screen bg-neutral-800 border-r border-t border-sky-900 pl-5 py-4 overflow-hidden transition-all transform ${menuActive ? 'translate-x-full' : ''}` }
+                className={ `fixed top-full -left-72 w-72 h-screen bg-neutral-800 border-r border-t border-sky-900 pl-5 py-4 overflow-hidden transition-all transform ${menuActive ? 'translate-x-full' : ''}` }
             >
                 { navList.map(item => {
                     return (
