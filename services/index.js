@@ -76,16 +76,16 @@ export const getPostDetails = async (slug) => {
 export const getRecentPosts = async () => {
     const query = gql`
         query GetPostDetails() {
-            posts(
-            orderBy: createdAt_DESC
-            first: 3
-            ) {
-            title
-            featuredImage {
-                url
-            }
-            createdAt
-            slug
+                posts(
+                    orderBy: createdAt_DESC
+                    first: 3
+                ) {
+                    title
+                    featuredImage {
+                        url
+                    }
+                createdAt
+                slug
             }
         }
     `;

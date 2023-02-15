@@ -25,7 +25,7 @@ const navList = [
         href: 'https://forms.gle/inqEudBF7uQwJ1po6',
         target: '_blank',
         icon: <FaComment className='text-xl mr-2' />
-    }
+    },
 ]
 
 const Header = () => {
@@ -42,7 +42,14 @@ const Header = () => {
                 </div>
                 <nav className='hidden lg:flex'>
                     { navList.map(item => (
-                        <Link key={ item.id } href={ item.href } target={ item.target } className='ml-8 font-semibold navHover'>{ item.name }</Link>
+                        <Link
+                            key={ item.id }
+                            href={ item.href }
+                            target={ item.target }
+                            className='ml-8 font-semibold navHover'
+                        >
+                            { item.name }
+                        </Link>
                     )) }
                 </nav>
                 <SearchButton />

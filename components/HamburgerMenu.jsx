@@ -1,11 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 const HamburgerMenu = ({ navList }) => {
     const [menuActive, setMenuActive] = useState(false);
 
     const handleMenu = () => {
         setMenuActive(!menuActive);
+        menuActive ? enableBodyScroll(document) : disableBodyScroll(document);
     }
 
     const menuRef = useRef(null);
