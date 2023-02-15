@@ -69,7 +69,7 @@ const HamburgerMenu = ({ navList }) => {
                                     href={ item.href }
                                     target={ item.target }
                                     onClick={ () => setMenuActive(false) }
-                                    className='flex items-center font-semibold h-8 my-4'
+                                    className='flex items-center font-semibold h-8 my-4 hover:text-blue-400 transition-all'
                                 >
                                     { item.icon } { item.name }
                                 </Link>
