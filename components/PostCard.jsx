@@ -10,11 +10,11 @@ const PostCard = ({ post }) => {
         <div className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border border-sky-900 rounded-lg p-0 lg:p-8 pb-12 mb-8'>
 
             <Link href={ `/post/${post.slug}` } key={ post.slug }>
-                <div className='relative overflow-hidden pb-80 mb-6 cursor-pointer shadow-lg rounded-t-lg lg:rounded-lg'>
+                <div className='relative overflow-hidden pb-48 lg:pb-80 mb-6 cursor-pointer shadow-lg rounded-t-lg lg:rounded-lg'>
                     <img
                         src={ post.featuredImage.url }
                         alt={ post.title }
-                        className='object-middle absolute h-80 w-full object-cover hover:scale-105 transition duration-400'
+                        className='object-middle absolute h-48 lg:h-80 w-full object-cover hover:scale-105 transition duration-400'
                     />
                 </div>
             </Link>
