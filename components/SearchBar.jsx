@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { getPosts } from '../services';
 
-const SearchBar = () => {
+const SearchBar = ({ mobileSearch, setSearchActive }) => {
 
     const [searchValue, setSearchValue] = useState('');
     const handleSearchInputChanges = (e) => {
@@ -47,10 +47,11 @@ const SearchBar = () => {
 
     const handlePostSelect = () => {
         setSearchValue('');
+        mobileSearch && setSearchActive(false);
     }
 
     return (
-        <div className='hidden relative lg:inline-block xl:w-1/3 xl:max-w-lg' ref={ searchRef }>
+        <div className='relative w-full' ref={ searchRef }>
             <input
                 type="text"
                 placeholder="Tìm kiếm bài viết..."
@@ -60,7 +61,7 @@ const SearchBar = () => {
             />
             {
                 searchValue.length > 1 && searchFocus &&
-                <div className='absolute left-0 top-12 w-full bg-neutral-800 border border-sky-900 rounded-md overflow-hidden'>
+                <div className={ `${mobileSearch ? 'mt-4' : 'absolute left-0 top-12 bg-neutral-800 border border-sky-900 rounded-md'} w-full overflow-hidden` }>
                     {
                         searchPost.length !== 0 &&
                         searchPost.map(post => {
@@ -70,16 +71,18 @@ const SearchBar = () => {
                                     <Link
                                         href={ `/post/${post.slug}` }
                                         key={ post.slug }
-                                        className='flex items-center w-full px-5 py-4'
+                                        className={ `${mobileSearch ? 'px-2' : 'px-5'} flex items-center w-full py-4` }
                                         onClick={ handlePostSelect }>
-                                        <Image
-                                            src={ post.featuredImage.url }
-                                            alt={ post.title }
-                                            height={ 60 }
-                                            width={ 60 }
-                                            className='align-middle rounded-md object-contain inline-block'
-                                        />
-                                        <span className='inline-block text-sm ml-4'>{ post.title }</span>
+                                        { mobileSearch ? '' : (
+                                            <Image
+                                                src={ post.featuredImage.url }
+                                                alt={ post.title }
+                                                height={ 60 }
+                                                width={ 60 }
+                                                className='align-middle rounded-md object-contain inline-block mr-4'
+                                            />
+                                        ) }
+                                        <span className='inline-block text-sm'>{ post.title }</span>
                                     </Link>
                                 </div>
                             )

@@ -36,7 +36,9 @@ const Header = () => {
                 <Link href='/' className='cursor-pointer'>
                     <img src="/logo.png" alt="logo" className='h-10' />
                 </Link>
-                <SearchBar />
+                <div className='hidden lg:inline-block xl:w-1/3 2xl:max-w-lg'>
+                    <SearchBar />
+                </div>
                 <nav className='hidden lg:flex'>
                     { navList.map(item => (
                         <Link
