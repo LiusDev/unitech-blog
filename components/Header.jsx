@@ -34,7 +34,7 @@ const Header = () => {
             <div className='w-full lg:container flex items-center justify-between px-5 lg:px-10 py-2'>
                 <HamburgerMenu navList={ navList } />
                 <Link href='/' className='cursor-pointer'>
-                    <img src="/logo.png" alt="logo" className='h-10' />
+                    <img src="/logo.png" alt="logo" className='h-8 lg:h-10' />
                 </Link>
                 <div className='hidden lg:inline-block xl:w-1/3 2xl:max-w-lg'>
                     <SearchBar />
