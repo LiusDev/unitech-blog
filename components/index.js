@@ -17,3 +17,4 @@ export {default as NotFoundPage} from './NotFoundPage';
 export {default as SearchBar} from './SearchBar';
 export {default as HamburgerMenu} from './HamburgerMenu';
 export {default as SearchButton} from './SearchButton';
+export {default as MemberCard} from './MemberCard';

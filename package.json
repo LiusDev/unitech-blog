@@ -21,7 +21,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-multi-carousel": "^2.8.2",
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "swiper": "^9.0.5"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
