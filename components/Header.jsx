@@ -19,13 +19,13 @@ const navList = [
         target: '_self',
         icon: <FaInfoCircle className='text-xl mr-2' />
     },
-    // {
-    //     id: 3,
-    //     name: 'Đóng góp ý kiến',
-    //     href: 'https://forms.gle/inqEudBF7uQwJ1po6',
-    //     target: '_blank',
-    //     icon: <FaComment className='text-xl mr-2' />
-    // },
+    {
+        id: 3,
+        name: 'Đóng góp ý kiến',
+        href: 'https://forms.gle/inqEudBF7uQwJ1po6',
+        target: '_blank',
+        icon: <FaComment className='text-xl mr-2' />
+    },
 ]
 
 const Header = () => {
