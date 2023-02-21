@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
-import { Header, Footer, MetaMessenger, FanpageScript } from '.'
+import { Header, Footer, MetaMessenger } from '.'
 
 const Layout = ({ children }) => {
     return (

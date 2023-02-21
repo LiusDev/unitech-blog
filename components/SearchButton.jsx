@@ -4,7 +4,6 @@ import { FaSearch } from 'react-icons/fa'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import { useTransition, animated } from '@react-spring/web';
 import SearchBar from './SearchBar';
-import { FaRegTimesCircle } from 'react-icons/fa';
 
 const SearchButton = () => {
     const [searchActive, setSearchActive] = useState(false);

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';

@@ -5,13 +5,13 @@ const Footer = () => {
     return (
         <footer className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border-t border-sky-900 px-4 py-8 md:px-12 lg:px-16 relative bottom-0 left-0 right-0'>
             <div className='flex flex-col md:flex-row md:space-x-16 justify-center md:items-center items-start'>
-                <a href="https://www.facebook.com/SSG.UniTech.Blog" target="_blank" className='mb-3 md:mb-0'>
+                <a href="https://www.facebook.com/SSG.UniTech.Blog" target="_blank" rel='noreferrer' className='mb-3 md:mb-0' title='Fanpage'>
                     <img src="/Logo-1.png" alt="logo" className='aspect-square rounded-full object-cover h-32' />
                 </a>
                 <div className='flex flex-col space-y-4 mb-3 md:mb-0'>
                     <div className='flex items-center space-x-3'>
                         <FaMapMarkedAlt className='w-6 h-6 text-blue-400' />
-                        <a href="https://goo.gl/maps/AYC7XBBsCnfwXKQj9" target="_blank" className='max-w-xs hover:text-blue-400 transition-all'>Đại học FPT, Khu Công nghệ cao Hòa Lạc, KM 29 Đại lộ Thăng Long, Hà Nội, Việt Nam.</a>
+                        <a href="https://goo.gl/maps/AYC7XBBsCnfwXKQj9" target="_blank" rel='noreferrer' className='max-w-xs hover:text-blue-400 transition-all'>Đại học FPT, Khu Công nghệ cao Hòa Lạc, KM 29 Đại lộ Thăng Long, Hà Nội, Việt Nam.</a>
                     </div>
                     <div className='flex items-center space-x-3'>
                         <FaEnvelope className='w-6 h-6 text-blue-400' />
@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className='flex flex-col space-y-3 mb-3 md:mb-0'>
                     <div className='flex items-center space-x-3'>
                         <FaUserTie className='w-6 h-6 text-blue-400' />
-                        <a href="https://www.facebook.com/x.quy.203/" target="_blank" className='hover:text-blue-400 transition-all'>
+                        <a href="https://www.facebook.com/x.quy.203/" target="_blank" rel='noreferrer' className='hover:text-blue-400 transition-all'>
                             <div>
                                 <p>Trưởng nhóm dự án:</p>
                                 <p className='font-semibold'>Đào Xuân Quý</p>

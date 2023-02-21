@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FaHome, FaInfoCircle, FaComment, FaExternalLinkAlt } from 'react-icons/fa'
@@ -41,7 +42,7 @@ const Header = () => {
         <header className='fixed bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 z-50 top-0 left-0 right-0 flex justify-center items-center mb-20px border-b border-sky-900'>
             <div className='w-full lg:container flex items-center justify-between px-5 lg:px-10 py-2'>
                 <HamburgerMenu navList={ navList } />
-                <Link href='/' className='cursor-pointer'>
+                <Link href='/' className='cursor-pointer' title='Trang chủ'>
                     <img src="/logo.png" alt="logo" className='h-8 lg:h-10' />
                 </Link>
                 <div className='hidden lg:inline-block xl:w-1/3 2xl:max-w-lg'>
@@ -54,6 +55,7 @@ const Header = () => {
                             href={ item.href }
                             target={ item.target }
                             className={ `ml-8 font-semibold navHover flex items-center ${currentRoute === item.href ? 'active' : ''}` }
+                            title={ item.name }
                         >
                             { item.name } { item.suffix }
                         </Link>

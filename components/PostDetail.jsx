@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
@@ -39,7 +40,7 @@ const PostDetail = ({ post }) => {
                     </div>
                 </div>
                 <div className='mb-4'>
-                    { post.categories.map((category, index) => (
+                    { post.categories.map(category => (
                         <Link href={ `/category/${category.slug}` } key={ category.slug }>
                             <span className='inline-block mr-3 mb-3 category'>
                                 { category.name }
@@ -57,13 +58,13 @@ const PostDetail = ({ post }) => {
                         h4: ({ children }) => <h4>{ children }</h4>,
                         h5: ({ children }) => <h5>{ children }</h5>,
                         p: ({ children }) => <p className='mb-4'>{ children }</p>,
-                        a: ({ children, openInNewTab, href, rel, ...rest }) => {
+                        a: ({ children, href, ...rest }) => {
                             if (href.match(/^https?:\/\/|^\/\//i)) {
                                 return (
                                     <a
                                         href={ href }
                                         target='_blank'
-                                        rel={ rel || 'noopener noreferrer' }
+                                        rel='noreferrer'
                                         className="text-blue-400 hover:underline"
                                         { ...rest }
                                     >

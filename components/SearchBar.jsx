@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'

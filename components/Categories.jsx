@@ -16,7 +16,7 @@ const Categories = () => {
                 Chủ đề
             </h3>
             { categories.map(category => (
-                <Link href={ `/category/${category.slug}` } key={ category.slug }>
+                <Link href={ `/category/${category.slug}` } key={ category.slug } title={ category.name }>
                     <span className='inline-block mr-3 mb-3 category'>
                         { category.name }
                     </span>

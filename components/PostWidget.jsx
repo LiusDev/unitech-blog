@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useState, useEffect } from 'react'
 import moment from 'moment'
 import Link from 'next/link'
@@ -29,7 +30,7 @@ const PostWidget = ({ categories, slug }) => {
                 return (
                     <div key={ post.slug } className='flex items-center w-full mb-4'>
                         <div className='w-16 flex-none'>
-                            <Link href={ `/post/${post.slug}` } key={ post.slug }>
+                            <Link href={ `/post/${post.slug}` } key={ post.slug } title={ post.title }>
                                 <Image
                                     src={ post.featuredImage.url }
                                     alt={ post.title }
@@ -39,16 +40,16 @@ const PostWidget = ({ categories, slug }) => {
                                 />
                             </Link>
                         </div>
-                        <div className='flex-grow ml-4 '>
-                            <Link href={ `/post/${post.slug}` } key={ post.slug }>
+                        <Link href={ `/post/${post.slug}` } key={ post.slug } title={ post.title } className='group'>
+                            <div className='flex-grow ml-4 '>
                                 <p className='subtitle mb-1'>
                                     { moment(post.createdAt).format('DD/MM/YYYY') }
                                 </p>
-                                <span className='hover:text-blue-400 transition-all'>
+                                <span className='group-hover:text-blue-400 transition-all'>
                                     { post.title }
                                 </span>
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                 )
             }) }

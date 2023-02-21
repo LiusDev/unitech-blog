@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import moment from 'moment';
 import Image from 'next/image';
@@ -6,7 +7,7 @@ import Link from 'next/link';
 const FeaturedPostCard = ({ post }) => {
     return (
         <div className='h-72 bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border border-sky-900 relative rounded-lg overflow-hidden' >
-            <Link href={ `/post/${post.slug}` }>
+            <Link href={ `/post/${post.slug}` } title={ post.title }>
                 <div className='h-full w-full relative'>
                     <div className='h-2/5 w-full overflow-hidden group'>
                         <div

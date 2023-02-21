@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
@@ -9,7 +10,7 @@ const PostCard = ({ post }) => {
     return (
         <div className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border border-sky-900 rounded-lg p-0 lg:p-8 pb-12 mb-8'>
 
-            <Link href={ `/post/${post.slug}` } key={ post.slug }>
+            <Link href={ `/post/${post.slug}` } key={ post.slug } title={ post.title }>
                 <div className='relative overflow-hidden pb-48 lg:pb-80 mb-6 cursor-pointer shadow-lg rounded-t-lg lg:rounded-lg'>
                     <img
                         src={ post.featuredImage.url }
@@ -51,7 +52,7 @@ const PostCard = ({ post }) => {
                 )) }
             </div>
 
-            <Link href={ `/post/${post.slug}` }>
+            <Link href={ `/post/${post.slug}` } title={ post.title }>
                 <h3 className='transition duration-400 text-center px-2 mb-3 cursor-pointer hover:text-blue-400 font-semibold'>
                     { post.title }
                 </h3>
