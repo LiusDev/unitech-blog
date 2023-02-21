@@ -189,6 +189,14 @@ a {
   &:hover::after {
     width: 100%;
   }
+
+  &.active {
+    color: #60a5fa;
+  }
+
+  &.active::after {
+    width: 100%;
+  }
 }
 
 .hamburger-menu span {
