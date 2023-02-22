@@ -13,7 +13,7 @@ const members = [
         name: "Đào Xuân Quý",
         position: "Leader",
         avatar: "/quydx.webp",
-        desc: "Là người thông minh, có trách nhiệm trong công việc, luôn đưa ra những ý tưởng táo bạo nhưng lại mang tính hiệu quả rất cao",
+        desc: 'Develop chính của dự án, phân công nhiệm vụ, và là "cầu nối" giữa các thành viên trong team',
         facebook: "https://www.facebook.com/x.quy.203",
     },
     {
@@ -27,9 +27,9 @@ const members = [
     {
         id: 3,
         name: "Ngô Sỹ Thắng",
-        position: "PR",
+        position: "Marketer",
         avatar: "/thangns.webp",
-        desc: "Truyền thông, lên ý tưởng truyền thông về dự án, thu thập dữ liệu, quản lý Fanpage. Là người giao tiếp tốt, hoà đồng",
+        desc: "Lên ý tưởng truyền thông về dự án, thu thập dữ liệu và quản lý Fanpage",
         facebook: "https://www.facebook.com/up.cheer.7796",
     },
     {
@@ -37,7 +37,7 @@ const members = [
         name: "Hà Việt Hiếu",
         position: "Content Creator",
         avatar: "/hieuhv.webp",
-        desc: "Sáng tạo nội dung, tổng hợp kiến thức, viết bài trên blog. Là người thông minh và sáng tạo",
+        desc: "Sáng tạo nội dung, tổng hợp kiến thức, viết bài trên blog",
         facebook: "https://www.facebook.com/haviethieu8888.jsclub",
     },
     {
@@ -53,7 +53,7 @@ const members = [
         name: "Trần Quốc Việt",
         position: "Designer",
         avatar: "/viettq.webp",
-        desc: "Phụ trách thiết kế các ấn phẩm, bài đăng cho blog cũng như fanpage..",
+        desc: "Phụ trách thiết kế các ấn phẩm, bài đăng cho blog cũng như fanpage",
         facebook: "https://www.facebook.com/khong.phai.quoc.viet",
     },
 ]
@@ -65,7 +65,7 @@ const suppoters = [
         position: "Giảng viên hướng dẫn",
         avatar: "/hadtt.webp",
         desc: "Giảng viên hướng dẫn nhóm UniTym trong quá trình thực hiện dự án",
-        facebook: "https://www.facebook.com/",
+        facebook: "https://www.facebook.com/do.thuha.735",
     },
     {
         id: 2,
@@ -90,7 +90,7 @@ const Intro = () => {
         <div className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 rounded-lg mb-8 border border-sky-900'>
             <h3 className='mb-8 m-8 pb-4 font-semibold border-b border-sky-900'>Giới thiệu dự án</h3>
             <div>
-                <p className='mb-4 leading-relaxed m-8'>UniTech Blog Là một website chia sẻ những kỹ năng phần mềm cho lập trình viên được thực hiện bởi những bạn trẻ trong nhóm UniTym đến từ lớp SE1748 - ĐH FPT Hà Nội. Blog có những bài viết rất bổ ích liên quan tới khối ngành công nghệ thông tin, tips, tricks, những kiến thức ngoài giảng đường... từ đó giúp các bạn sinh viên thêm động lực để tiếp tục con đường theo đuổi ngành công nghệ thông tin.</p>
+                <p className='mb-4 leading-relaxed m-8'>UniTech Blog là một website chia sẻ những kỹ năng phần mềm cho lập trình viên được thực hiện bởi những bạn trẻ trong nhóm UniTym đến từ lớp SE1748 - ĐH FPT Hà Nội. Blog có những bài viết rất bổ ích liên quan tới khối ngành công nghệ thông tin, tips, tricks, những kiến thức ngoài giảng đường... từ đó giúp các bạn sinh viên thêm động lực để tiếp tục con đường theo đuổi ngành công nghệ thông tin.</p>
                 <h3 className='mx-8 mt-8 text-center'>Fanpage</h3>
                 <div className='hidden lg:flex items-center justify-center'>
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSSG.UniTech.Blog&tabs&width=500&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="130" style={ { border: "none", overflow: "hidden" } } allowFullScreen={ true } allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
