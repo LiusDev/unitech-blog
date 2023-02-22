@@ -13,7 +13,7 @@ const members = [
         name: "Đào Xuân Quý",
         position: "Leader",
         avatar: "/quydx.webp",
-        desc: "Là người thông minh, có trách nhiệm trong công việc, luôn đưa ra những ý tưởng táo bạo nhưng lại mang tính hiệu quả rất cao",
+        desc: 'Develop chính của dự án, phân công nhiệm vụ, và là "cầu nối" giữa các thành viên trong team',
         facebook: "https://www.facebook.com/x.quy.203",
     },
     {
@@ -27,9 +27,9 @@ const members = [
     {
         id: 3,
         name: "Ngô Sỹ Thắng",
-        position: "PR",
+        position: "Marketer",
         avatar: "/thangns.webp",
-        desc: "Truyền thông, lên ý tưởng truyền thông về dự án, thu thập dữ liệu, quản lý Fanpage. Là người giao tiếp tốt, hoà đồng",
+        desc: "Lên ý tưởng truyền thông về dự án, thu thập dữ liệu và quản lý Fanpage",
         facebook: "https://www.facebook.com/up.cheer.7796",
     },
     {
@@ -37,7 +37,7 @@ const members = [
         name: "Hà Việt Hiếu",
         position: "Content Creator",
         avatar: "/hieuhv.webp",
-        desc: "Sáng tạo nội dung, tổng hợp kiến thức, viết bài trên blog. Là người thông minh và sáng tạo",
+        desc: "Sáng tạo nội dung, tổng hợp kiến thức, viết bài trên blog",
         facebook: "https://www.facebook.com/haviethieu8888.jsclub",
     },
     {
@@ -53,7 +53,7 @@ const members = [
         name: "Trần Quốc Việt",
         position: "Designer",
         avatar: "/viettq.webp",
-        desc: "Phụ trách thiết kế các ấn phẩm, bài đăng cho blog cũng như fanpage..",
+        desc: "Phụ trách thiết kế các ấn phẩm, bài đăng cho blog cũng như fanpage",
         facebook: "https://www.facebook.com/khong.phai.quoc.viet",
     },
 ]
@@ -65,7 +65,7 @@ const suppoters = [
         position: "Giảng viên hướng dẫn",
         avatar: "/hadtt.webp",
         desc: "Giảng viên hướng dẫn nhóm UniTym trong quá trình thực hiện dự án",
-        facebook: "https://www.facebook.com/",
+        facebook: "https://www.facebook.com/do.thuha.735",
     },
     {
         id: 2,
