@@ -4,9 +4,27 @@ _Đây là dự án UniTech Blog trong bộ môn SSG104 của nhóm UniTym lớp
 
 ![Preview](./public/preview.png)
 
+## **Giới thiệu**
+
+UniTech Blog là một website chia sẻ những kỹ năng phần mềm cho lập trình viên được thực hiện bởi những bạn trẻ trong nhóm UniTym đến từ lớp SE1748 - ĐH FPT Hà Nội. Blog có những bài viết rất bổ ích liên quan tới khối ngành công nghệ thông tin, tips, tricks, những kiến thức ngoài giảng đường... từ đó giúp các bạn sinh viên thêm động lực để tiếp tục con đường theo đuổi ngành công nghệ thông tin.
+
 ## **Deploy**
 
-[![Deploy with Vercel](https://vercel.com/button)](https://www.unitym.tech/)
+[https://www.unitym.tech/](https://www.unitym.tech/)
+
+## **Công nghệ sử dụng**
+
+- [NextJS 13](https://nextjs.org/)
+- [TailwindCSS 3.2.6](https://tailwindcss.com/)
+- [Hygraph](https://hygraph.com/)
+
+## **Fanpage**
+
+[UniTech Blog](https://www.facebook.com/SSG.UniTech.Blog)
+
+## **Đóng góp ý kiến**
+
+Bạn có thể đóng góp ý kiến giúp website hoàn thiện hơn [tại đây](https://forms.gle/Cf3GDyJQR2eadeNG6)
 
 ## **Thành viên nhóm**
 

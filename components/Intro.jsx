@@ -90,7 +90,7 @@ const Intro = () => {
         <div className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 rounded-lg mb-8 border border-sky-900'>
             <h3 className='mb-8 m-8 pb-4 font-semibold border-b border-sky-900'>Giới thiệu dự án</h3>
             <div>
-                <p className='mb-4 leading-relaxed m-8'>UniTech Blog Là một website chia sẻ những kỹ năng phần mềm cho lập trình viên được thực hiện bởi những bạn trẻ trong nhóm UniTym đến từ lớp SE1748 - ĐH FPT Hà Nội. Blog có những bài viết rất bổ ích liên quan tới khối ngành công nghệ thông tin, tips, tricks, những kiến thức ngoài giảng đường... từ đó giúp các bạn sinh viên thêm động lực để tiếp tục con đường theo đuổi ngành công nghệ thông tin.</p>
+                <p className='mb-4 leading-relaxed m-8'>UniTech Blog là một website chia sẻ những kỹ năng phần mềm cho lập trình viên được thực hiện bởi những bạn trẻ trong nhóm UniTym đến từ lớp SE1748 - ĐH FPT Hà Nội. Blog có những bài viết rất bổ ích liên quan tới khối ngành công nghệ thông tin, tips, tricks, những kiến thức ngoài giảng đường... từ đó giúp các bạn sinh viên thêm động lực để tiếp tục con đường theo đuổi ngành công nghệ thông tin.</p>
                 <h3 className='mx-8 mt-8 text-center'>Fanpage</h3>
                 <div className='hidden lg:flex items-center justify-center'>
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSSG.UniTech.Blog&tabs&width=500&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="130" style={ { border: "none", overflow: "hidden" } } allowFullScreen={ true } allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
