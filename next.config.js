@@ -29,6 +29,11 @@ module.exports = {
         destination: 'https://vercel.com/liusdev/unitech-blog/analytics/audience?period=90d',
         permanent: true,
       },
+      {
+        source: '/feedback', 
+        destination: 'https://forms.gle/sC1AcgxuTNGNArnu9',
+        permanent: true,
+      },
     ]
   },
 }

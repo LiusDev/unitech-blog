@@ -1,5 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react';
 import Head from 'next/head'
 import { FaAngleDown } from 'react-icons/fa';
