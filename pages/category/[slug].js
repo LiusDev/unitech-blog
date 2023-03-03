@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import { FaAngleDown } from 'react-icons/fa';
 
 import { getCategories, getCategoryPost } from '../../services';
 import { PostCard, Categories, Loader, NotFoundPage, Button } from '../../components';
@@ -32,6 +33,15 @@ const CategoryPost = ({ posts }) => {
     };
     getCategoryName();
   }, [router.query.slug]);
+
+  //sort posts by date
+  const sortedPosts = (posts) => {
+    return posts.sort((a, b) => {
+        return new Date(b.node.createdAt) - new Date(a.node.createdAt);
+    })
+  }
+
+  posts = sortedPosts(posts);
 
   //view more
   const [limitPost, setLimitPost] = useState(5);
@@ -68,11 +78,14 @@ const CategoryPost = ({ posts }) => {
           {showPosts.map((post, index) => (
             <PostCard key={index} post={post.node} />
           ))}
-          <div className='float-right'>
+          <div className='text-center mb-8 lg:mb-0'>
             {
               showViewMore &&
-              <Button onClick={() => handleViewMore()}>
-                  <span className='inline-block'>Xem thêm <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 inline-block"><path fill='#e2e8f0' d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></span>
+              <Button onClick={ () => handleViewMore() }>
+                  <span className='flex flex-col items-center justify-center'>
+                      <span className='text-sm'>Xem thêm</span>
+                      <FaAngleDown className="w-4 h-4 group-hover:translate-y-1 transition-all" />
+                  </span>
               </Button>
             }
           </div>
