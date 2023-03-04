@@ -3,7 +3,7 @@ import React from 'react'
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { getPosts } from '../services';
+import { getPosts } from '../../services';
 
 const SearchBar = ({ mobileSearch, setSearchActive }) => {
 

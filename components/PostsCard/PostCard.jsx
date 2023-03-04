@@ -3,7 +3,7 @@ import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
 import Image from 'next/image'
-import Button from './Button'
+import Button from '../Common/Button'
 import { FaCalendarAlt, FaArrowRight } from 'react-icons/fa'
 
 const PostCard = ({ post }) => {

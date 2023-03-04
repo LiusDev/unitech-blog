@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
-import { Header, Footer, MetaMessenger } from '.'
+import React, { Suspense } from 'react'
+import { Header, Footer, MetaMessenger } from '../..'
 
 const Layout = ({ children }) => {
     return (
@@ -9,7 +9,9 @@ const Layout = ({ children }) => {
             <main>
                 { children }
             </main>
-            <MetaMessenger />
+            <Suspense>
+                <MetaMessenger />
+            </Suspense>
             <Footer />
         </>
     )
