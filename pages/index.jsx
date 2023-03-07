@@ -21,7 +21,7 @@ export default function Home({ posts }) {
     const [showViewMore, setShowViewMore] = useState(false);
 
     const handleViewMore = () => {
-        setLimitPost(limitPost + 5);
+        setLimitPost(prev => prev + 5);
         showPosts = posts.slice(0, limitPost);
     }
 
