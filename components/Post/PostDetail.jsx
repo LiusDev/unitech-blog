@@ -64,7 +64,7 @@ const PostDetail = ({ post }) => {
                                     <a
                                         href={ href }
                                         target='_blank'
-                                        rel='noreferrer'
+                                        rel='noopener'
                                         className="text-blue-400 hover:underline"
                                         { ...rest }
                                     >

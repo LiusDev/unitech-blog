@@ -54,6 +54,7 @@ const Header = () => {
                             key={ item.id }
                             href={ item.href }
                             target={ item.target }
+                            rel='noopener'
                             className={ `ml-8 font-semibold navHover flex items-center ${currentRoute === item.href ? 'active' : ''}` }
                             title={ item.name }
                         >

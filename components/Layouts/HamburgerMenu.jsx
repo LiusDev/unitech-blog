@@ -69,6 +69,7 @@ const HamburgerMenu = ({ navList }) => {
                                     key={ item.id }
                                     href={ item.href }
                                     target={ item.target }
+                                    rel='noopener'
                                     onClick={ () => setMenuActive(false) }
                                     className='flex items-center font-semibold h-8 my-4 hover:text-blue-400 transition-all'
                                 >
