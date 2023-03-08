@@ -27,9 +27,9 @@ const Comments = ({ slug }) => {
                                 <span className='font-semibold'>{ comment.name }</span>
                                 { ' ' }
                                 đã bình luận
-                                { ' (' }
+                                {/* { ' (' }
                                 { moment(comment.createdAt).format('DD/MM/YYYY') }
-                                { ')' }
+                                { ')' } */}
                             </p>
                             <p className='whitespace-pre-line w-full'>
                                 { parse(comment.comment) }
