@@ -3,7 +3,7 @@ import { FaMapMarkedAlt, FaEnvelope, FaUserTie, FaPhoneAlt } from 'react-icons/f
 
 const Footer = () => {
     return (
-        <footer className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border-t border-sky-900 px-4 pt-8 md:px-12 lg:px-16 relative bottom-0 left-0 right-0'>
+        <footer className='bg supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75 border-t border-sky-900 px-4 pt-8 md:px-12 lg:px-16 relative bottom-0 left-0 right-0 overflow-hidden'>
             <div className='flex flex-col md:flex-row md:space-x-16 justify-center md:items-center items-start'>
                 <a href="https://www.facebook.com/SSG.UniTech.Blog" target="_blank" rel='noreferrer' className='mb-3 md:mb-0' title='Fanpage'>
                     <img src="/Logo-1.png" alt="logo" className='aspect-square rounded-full object-cover h-32' />
@@ -43,7 +43,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='border-t border-sky-900/40 mt-8'>
+            <div className='border-t border-sky-900/40 mt-8 max-w-7xl m-auto'>
                 <p className='text-center text-gray-500 dark:text-gray-400 py-4'>UniTym © { new Date().getFullYear() } - All Rights Reserved</p>
             </div>
         </footer>
