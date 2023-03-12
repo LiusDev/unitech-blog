@@ -21,7 +21,7 @@ const PostDetails = ({ post }) => {
   return (
     <div className='container mx-auto px-5 md:px-10 mb-8 mt-20 min-h-screen'>
         <Head>
-            <title>{post.title}</title>
+            <title>{`${post.title} | UniTech Blog`}</title>
             <meta property="og:image" content={post.featuredImage.url} />
             <meta name="google-site-verification" content="3efLReZ1VSvaHUpupLzLSTBLOUkxKVlLrOiHKiaA_wQ" />
         </Head>

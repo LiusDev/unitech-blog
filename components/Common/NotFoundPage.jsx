@@ -6,7 +6,7 @@ const NotFoundPage = () => {
     return (
         <div className='min-w-screen min-h-screen flex items-center justify-center'>
             <Head>
-                <title>{ "Không tìm thấy trang :(" }</title>
+                <title>Không tìm thấy trang | UniTech Blog</title>
             </Head>
             <div className='col-span-1 lg:col-span-8'>
                 <div className='text-center mt-40'>
