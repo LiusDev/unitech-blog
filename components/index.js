@@ -18,3 +18,4 @@ export {default as SearchBar} from './Layouts/SearchBar';
 export {default as HamburgerMenu} from './Layouts/HamburgerMenu';
 export {default as SearchButton} from './Layouts/SearchButton';
 export {default as MemberCard} from './Intro/MemberCard';
+export {default as BackToTopBtn} from './Common/BackToTopBtn';
